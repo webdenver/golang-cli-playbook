@@ -15,7 +15,6 @@ func TestModule5goimportsContent(t *testing.T) {
 	if found != true {
 		t.Errorf("the fmt package is not found")
 	}
-
 	expected = "	\"net/http\""
 	found = OpenFileAndFindNthString("./module5_code.go", 0, expected)
 	if found != true {
